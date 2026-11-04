@@ -2,6 +2,11 @@ body {
     background-color: #f3ede1cd; 
     margin: 0; 
     padding: 0; 
+    background-image: url('https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;          
+    background-repeat: no-repeat;    
+    background-position: center;     
+    background-attachment: fixed;    
 }
 
 nav {
@@ -24,26 +29,76 @@ nav ul {
 }
 
 nav a { 
-    color: #ffffff; 
+    color: #b0a67b96; 
     font-weight: bold; 
     font-size: 1.5rem; 
     text-decoration: none; 
     font-family: 'Roboto', sans-serif; 
+    transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: #f3ede1;
+    text-decoration: underline;
+}
 
 body h1, body p, body h2, body ul { 
     padding-left: 20px;
     padding-right: 20px;
 }
 
-body h1 { font-family:'inter', sans-serif; font-size: 2rem; color:#083b2ac1; text-align: center; margin-top: 20px; }
-body p { font-family:'georgia', serif; font-size: 1rem; color:#083b2ac1; text-align: center; margin-top: 10px;}
-body h2 { font-family:'inter', sans-serif; font-size: 2rem; color:#083b2ac1; text-align: center; margin-top: 20px; }
-body ul { font-family:'georgia', serif; font-size: 1rem; color:#083b2ac1; text-align:center; width: fit-content; margin: 0 auto; }
+body h1 { 
+    font-family: 'inter', sans-serif; 
+    font-size: 2rem; 
+    color: #1f926c; 
+    text-align: center; 
+    width: 80%;                     
+    height: auto;                   
+    margin: 30px auto 20px auto;     
+    padding: 15px 20px;             
+    border: 2px solid #34a267;      
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px;
+}
 
-img { width: 50%; 
+body h2 { 
+    font-family: 'inter', sans-serif; 
+    font-size: 1.8rem; 
+    color: #34a267;
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+body p { 
+    font-family: 'georgia', serif; 
+    font-size: 1.1rem; 
+    color: #083b2a; 
+    text-align: center; 
+    margin: 10px auto;
+    padding: 10px 15px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.85); 
+    border-radius: 5px;
+}
+
+body ul { 
+    font-family: 'georgia', serif; 
+    font-size: 1rem; 
+    color: #083b2a; 
+    text-align: left; 
+    width: fit-content; 
+    margin: 10px auto; 
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+}
+
+img { 
+    width: 50%; 
+    max-width: 500px;
     height: auto; 
-    position: center;
-    padding-left: 400px;
+    display: block;
+    margin: 20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
